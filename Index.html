@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>University Management System</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="https://img.freepik.com/premium-vector/university-logo-template-vector-illustration_20448-605.jpg" alt="University Logo" width="50" height="50" class="me-2 rounded">
+        <span class="fw-bold">University Management System Portal</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#dashboardCards">Dashboard</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Affiliations</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Students</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">More</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Courses</a></li>
+              <li><a class="dropdown-item" href="#">Faculties</a></li>
+              <li><a class="dropdown-item" href="#">Departments</a></li>
+              <li><a class="dropdown-item" href="#">Results</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <button class="btn btn-outline-light ms-3" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <header id="home" class="hero text-center py-5">
+    <div class="container">
+      <h1 class="display-4 fw-bold text-primary">University Management System</h1>
+      <p class="lead text-muted">Simplify the management of students, staff, courses & more with a seamless experience.</p>
+      <a href="#dashboardCards" class="btn btn-primary mt-3">Go to Dashboard</a>
+    </div>
+  </header>
+
+  
+  <section class="container my-5" id="dashboardCards">
+    <div class="text-center mb-4">
+      <h2 class="mb-3">Dashboard Overview</h2>
+      <p class="text-muted">Access all modules from one place</p>
+    </div>
+    <div class="row g-4" id="cardContainer">
+     
+    </div>
+  </section>
+
+  
+  <footer class="text-white text-center py-4" style="background-color: #003366;">
+    <div class="container">
+      <p class="mb-1">&copy; 2025 University Management System</p>
+      <small>Built for performance, accessibility, and excellence in education.</small>
+    </div>
+  </footer>
+
+
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <form id="loginForm">
+          <div class="modal-header">
+            <h5 class="modal-title">Login to University Management System</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="username" class="form-label">Username</label>
+              <input type="text" id="username" class="form-control" required />
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" id="password" class="form-control" required />
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-primary w-100">Login</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
